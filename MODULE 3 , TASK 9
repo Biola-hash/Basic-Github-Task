@@ -1,0 +1,579 @@
+{
+	"id": "c0030b95-cd6e-4826-93e4-29bef5f09e5c",
+	"name": "STSTStudentCourse",
+	"timestamp": "2024-07-07T20:26:23.784Z",
+	"collection_id": "36598141-cdbd8ce5-065a-460e-9534-6cca86305397",
+	"folder_id": 0,
+	"environment_id": "36598141-13216129-c11a-4349-aa2c-267c3dd290da",
+	"totalPass": 37,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-07T20:25:59.941Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a38f1fc1-5df7-4eb3-8c92-7bebb3146a74",
+			"name": "Get All Todo Entries",
+			"url": "https://demo.fusio-project.org/index.php/",
+			"time": 3254,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code should be 200": true,
+				"Status code name should be OK": true,
+				"confirm that the apiVersion is 8.1.1.0": true,
+				"confirm that the title is Fusio": true,
+				"confirm that the links[1].rel is openapi": true,
+				"confirm that the categories[0]is authorization": true,
+				"confirm that 8.1.1.0 is present": true,
+				"confirm that the categories[4] is system": true,
+				"confirm that the links[7].href ishttps://demo.fusio-project.org/authorization/whoami": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name should be OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that the apiVersion is 8.1.1.0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that the title is Fusio": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that the links[1].rel is openapi": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that the categories[0]is authorization": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that 8.1.1.0 is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that the categories[4] is system": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that the links[7].href ishttps://demo.fusio-project.org/authorization/whoami": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3254
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true,
+					"Status code name should be OK": true,
+					"confirm that the apiVersion is 8.1.1.0": true,
+					"confirm that the title is Fusio": true,
+					"confirm that the links[1].rel is openapi": true,
+					"confirm that the categories[0]is authorization": true,
+					"confirm that 8.1.1.0 is present": true,
+					"confirm that the categories[4] is system": true,
+					"confirm that the links[7].href ishttps://demo.fusio-project.org/authorization/whoami": true
+				}
+			]
+		},
+		{
+			"id": "d293c80e-30c5-47f0-8143-65ca48c9d1e2",
+			"name": "Get All Entries",
+			"url": "https://demo.fusio-project.org/index.php/",
+			"time": 1115,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": true,
+				"expect api version to be 8.1.1.0": true,
+				"expect Payment currency to be EUR": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"expect api version to be 8.1.1.0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"expect Payment currency to be EUR": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1115
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": true,
+					"expect api version to be 8.1.1.0": true,
+					"expect Payment currency to be EUR": true
+				}
+			]
+		},
+		{
+			"id": "3a1c6c8a-6db1-46c7-8e91-b37a6f6f0485",
+			"name": "Get entry per ID - Valid ID",
+			"url": "https://demo.fusio-project.org/index.php/?todo_id=openapi",
+			"time": 1123,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response has the required fields": true,
+				"apiVersion is a non-empty string": true,
+				"Validate that title is a non-empty string": true,
+				"Validate that paymentCurrency is a non-empty string": true,
+				"Categories is an array and is not empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"apiVersion is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate that title is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate that paymentCurrency is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Categories is an array and is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1123
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response has the required fields": true,
+					"apiVersion is a non-empty string": true,
+					"Validate that title is a non-empty string": true,
+					"Validate that paymentCurrency is a non-empty string": true,
+					"Categories is an array and is not empty": true
+				}
+			]
+		},
+		{
+			"id": "99017a8d-11e5-40cd-9ffe-fd7ed67425d4",
+			"name": "Get entry per ID - Invalid ID(params not using TODO ID)",
+			"url": "https://demo.fusio-project.org/index.php/?todo_id=10000",
+			"time": 1090,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code should be 1000": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 1000": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1090
+			],
+			"allTests": [
+				{
+					"Status code should be 1000": true
+				}
+			]
+		},
+		{
+			"id": "174f983d-266f-4c3e-8bf6-3af26efad781",
+			"name": "Get All Books",
+			"url": "https://simple-books-api.glitch.me/books",
+			"time": 4563,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code should be 200": true,
+				"Status code name should have an OK string": true,
+				"Search for a book name called The Vanishing Half": true,
+				"Search for the book type of a book with the name The Russian": true,
+				"Confirm that totalResults is undefined": true,
+				"Body contains string 'The Russian'": true,
+				"Response is an array": true,
+				"Response array has 6 items": true,
+				"First item has correct properties and values": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name should have an OK string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Search for a book name called The Vanishing Half": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Search for the book type of a book with the name The Russian": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that totalResults is undefined": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body contains string 'The Russian'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response array has 6 items": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First item has correct properties and values": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4563
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true,
+					"Status code name should have an OK string": true,
+					"Search for a book name called The Vanishing Half": true,
+					"Search for the book type of a book with the name The Russian": true,
+					"Confirm that totalResults is undefined": true,
+					"Body contains string 'The Russian'": true,
+					"Response is an array": true,
+					"Response array has 6 items": true,
+					"First item has correct properties and values": true
+				}
+			]
+		},
+		{
+			"id": "a21799fa-9a80-4f65-b0c0-00c1f7610fd2",
+			"name": "Get Books -Valid book ID",
+			"url": "https://simple-books-api.glitch.me/books",
+			"time": 1182,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code should be 200": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1182
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true
+				}
+			]
+		},
+		{
+			"id": "7812dd8b-5476-48a7-951c-1250016b276b",
+			"name": "Get Books by Invalid book type",
+			"url": "https://simple-books-api.glitch.me/books?type=fiction",
+			"time": 1106,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1106
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "06cfb61b-cb38-4050-8443-e25b5a3edc17",
+			"name": "Place a book order - using Valid book ID",
+			"url": "https://simple-books-api.glitch.me/orders",
+			"time": 1138,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Status code name has string": true,
+				"order created": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"order created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1138
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Status code name has string": true,
+					"order created": true
+				}
+			]
+		},
+		{
+			"id": "59d51f8b-7d9f-40ad-a60a-1e2ce9735bb1",
+			"name": "Get all orders",
+			"url": "https://simple-books-api.glitch.me/orders",
+			"time": 1117,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1117
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "24c3a8e8-5f4e-4357-8ba4-4740c6c80845",
+			"name": "Get an order - using orderID",
+			"url": "https://simple-books-api.glitch.me/orders/0G6MHTVJBoRdQ4SOzldo-",
+			"time": 1187,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Customer name is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Customer name is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1187
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Customer name is present": true
+				}
+			]
+		},
+		{
+			"id": "6455321e-74ac-405e-b104-77c3737a4540",
+			"name": "Update an order",
+			"url": "https://simple-books-api.glitch.me/orders/",
+			"time": 1216,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1216
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4f7bd9ab-7278-480f-96e6-bd8455ce6011",
+			"name": "Delete an order using orderid",
+			"url": "https://simple-books-api.glitch.me/orders/0G6MHTVJBoRdQ4SOzldo-",
+			"time": 1233,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Status code name has No Content": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has No Content": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1233
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Status code name has No Content": true
+				}
+			]
+		},
+		{
+			"id": "9db5ad37-2fc2-41b4-92c7-a39da6a7fc8b",
+			"name": "Register API Client",
+			"url": "https://simple-books-api.glitch.me/api-clients/",
+			"time": 1216,
+			"responseCode": {
+				"code": 409,
+				"name": "Conflict"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1216
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "78d6d57c-2f77-4399-873c-66bcc2d1edf3",
+			"name": "Get API Status",
+			"url": "https://simple-books-api.glitch.me/status",
+			"time": 1151,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1151
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 21691,
+	"collection": {
+		"requests": [
+			{
+				"id": "a38f1fc1-5df7-4eb3-8c92-7bebb3146a74",
+				"method": "GET"
+			},
+			{
+				"id": "d293c80e-30c5-47f0-8143-65ca48c9d1e2",
+				"method": "GET"
+			},
+			{
+				"id": "3a1c6c8a-6db1-46c7-8e91-b37a6f6f0485",
+				"method": "GET"
+			},
+			{
+				"id": "99017a8d-11e5-40cd-9ffe-fd7ed67425d4",
+				"method": "GET"
+			},
+			{
+				"id": "174f983d-266f-4c3e-8bf6-3af26efad781",
+				"method": "GET"
+			},
+			{
+				"id": "a21799fa-9a80-4f65-b0c0-00c1f7610fd2",
+				"method": "GET"
+			},
+			{
+				"id": "7812dd8b-5476-48a7-951c-1250016b276b",
+				"method": "GET"
+			},
+			{
+				"id": "06cfb61b-cb38-4050-8443-e25b5a3edc17",
+				"method": "POST"
+			},
+			{
+				"id": "59d51f8b-7d9f-40ad-a60a-1e2ce9735bb1",
+				"method": "GET"
+			},
+			{
+				"id": "24c3a8e8-5f4e-4357-8ba4-4740c6c80845",
+				"method": "GET"
+			},
+			{
+				"id": "6455321e-74ac-405e-b104-77c3737a4540",
+				"method": "POST"
+			},
+			{
+				"id": "4f7bd9ab-7278-480f-96e6-bd8455ce6011",
+				"method": "DELETE"
+			},
+			{
+				"id": "9db5ad37-2fc2-41b4-92c7-a39da6a7fc8b",
+				"method": "POST"
+			},
+			{
+				"id": "78d6d57c-2f77-4399-873c-66bcc2d1edf3",
+				"method": "GET"
+			}
+		]
+	}
+}
