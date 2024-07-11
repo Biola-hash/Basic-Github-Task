@@ -1,0 +1,92 @@
+{
+  "id": "cc928652-1f4f-443f-a96b-f7724f89360c",
+  "version": "2.0",
+  "name": "facebook",
+  "url": "https://web.konga.com/?_rdc=1&_rdr",
+  "tests": [{
+    "id": "486f5af8-638c-4a61-9fb3-9048f528fbe9",
+    "name": "invalid password",
+    "commands": [{
+      "id": "3580678b-df08-4fb8-b9fb-84b0b92cf6d0",
+      "comment": "",
+      "command": "open",
+      "target": "https://web.facebook.com/?_rdc=1&_rdr",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93c8dc39-47c1-4046-8b65-ddb4a3726c5a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "711x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d7fc213-3c9e-44af-9ac3-a63fb77b6368",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='u_0_2_F7']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41ab6e4e-86c0-4623-b52e-bba95d42d222",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='u_0_2_F7']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "bolajimuhammedabiola915@gmail.com"
+    }, {
+      "id": "77a79740-570a-48ba-9dd6-7348fe655c51",
+      "comment": "",
+      "command": "click",
+      "target": "id=u_0_5_ze",
+      "targets": [
+        ["id=u_0_5_ze", "id"],
+        ["name=login", "name"],
+        ["css=#u_0_5_ze", "css:finder"],
+        ["xpath=//button[@id='u_0_5_ze']", "xpath:attributes"],
+        ["xpath=//form[@id='u_0_2_F7']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d9038ea-da07-4f1c-8889-4fd071a64170",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1ba3dec-c9bd-437c-a232-101549100286",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a7fb0622-1607-4f5e-a3aa-baf7c81dc287",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["486f5af8-638c-4a61-9fb3-9048f528fbe9"]
+  }],
+  "urls": [],
+  "plugins": []
+}
